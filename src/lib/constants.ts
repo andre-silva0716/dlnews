@@ -9,7 +9,7 @@ export const HEADER_TITLES = [
 
 export const TITLE_LISTS = {
   footer: " Copyright © DL News 2023. All rights reserved.",
-  filter_by_chain: "Filter By Chain",
+  filter_by_chain: "Filtaer By Chain",
   filter_by_category: "Filter By Category",
   show_page: "Show Page",
   all_protocols: "All Protocols",

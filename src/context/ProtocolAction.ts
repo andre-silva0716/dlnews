@@ -7,14 +7,10 @@ import {
 import { CONTEXT_TITLE } from "../lib/constants"
 import APIURL from "../lib/constants"
 
-const API_URL = "https://api.llama.fi/protocols"
-
-console.log(APIURL)
-
 export const getAllData = async (dispatch) => {
   dispatch({ type: CONTEXT_TITLE.BEGIN_DATA_FETCH })
   try {
-    const response = await axios.get(API_URL)
+    const response = await axios.get(APIURL.api)
     dispatch({
       type: CONTEXT_TITLE.SUCCESSFUL_DATA_FETCH,
       payload: response.data,
